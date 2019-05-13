@@ -1,6 +1,8 @@
-<a [routerLink]="['/']" class="btn">主页组件</a>
+<a [routerLink]="['/home']" class="btn">主页组件</a>
 
-<a [routerLink]="['/stock']" class="btn">股票详情</a>
+<!-- <a [routerLink]="['/stock']" class="btn" [queryParams]="{id:1}">股票详情</a>第一种参数传递 -->
+
+<a [routerLink]="['/stock',1]" class="btn">股票详情</a>
 
 <button (click)="goDetail()">按钮</button>
 <router-outlet></router-outlet>

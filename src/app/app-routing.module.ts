@@ -6,16 +6,19 @@ import { Code404Component } from './code404/code404.component';
 
 const routes: Routes = [
   {
-    path:"",
-    component:HomeComponent
+    path: "", redirectTo: "/home", pathMatch: "full"
   },
   {
-    path:"stock",
-    component:StockComponent
+    path: "home",
+    component: HomeComponent
   },
   {
-    path:"**",
-    component:Code404Component
+    path: "stock/:id",
+    component: StockComponent
+  },
+  {
+    path: "**",
+    component: Code404Component
   }
 ];
 

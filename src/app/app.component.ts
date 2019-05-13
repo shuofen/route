@@ -14,7 +14,7 @@ export class AppComponent {
 
   goDetail() {
     debugger;
-    this.router.navigate(['/stock']);
+    this.router.navigate(['/stock',2]);
   }
 
 }
